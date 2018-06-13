@@ -1,10 +1,32 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
-    <title>Web Page</title>
+    <!--
+    <link rel="stylesheet" hred="../css/style.css">
+  -->
+    <title>Placing Battle Locations</title>
+    <style>
+    #map {
+      height: 100%
+    }
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    </style>
   </head>
   <body>
-    
+    <div>This website takes location data of battles from certain time periods
+    from wikipedia and places them on a google maps component</div>
+
+    <div>Choose the time period of the battles you would like to view</div>
+
+    <div id="map"></div>
+
+    <script src="../js/app.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1DJTyOZ0HV6XjHkdxIP9H3xnpuPG2SZE&callback=initMap" async defer></script>
   </body>
 </html>
